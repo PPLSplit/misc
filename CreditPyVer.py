@@ -4,9 +4,8 @@ def checksum (number):
     doublednumbers = 0 
     rem = 0 
     while True: # forever loops unless break condition is met
-        rem = number%10
-        #if number >= 10:
-        number = number//10
+        rem = number%10 # stores remainder as the digit
+        number = number//10 # slices the last digit of the number // is int divide in python
         if counter%2 == 0:
             purelynumbers += rem
         else:
