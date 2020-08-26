@@ -60,5 +60,5 @@ def identifycard(num):
     else:
         return("INVALID\n")
 
-userinput = input("Number: ")
+userinput = int(input("Number: "))
 print(identifycard(userinput))
