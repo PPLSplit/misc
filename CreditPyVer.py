@@ -50,8 +50,8 @@ def getlength (num):
         counter+=1
     return counter
 def identifycard(num):
-    if checksum(num):
-        if getfirstdigit(num) == 4 and getlength(num) >= 13:
+    if checksum(num) and getlength(num) >= 13:
+        if getfirstdigit(num) == 4:
             return("VISA\n")
         elif getfirsttwodigits(num) == 34 or getfirsttwodigits(num) == 37:
             return("AMEX\n")
